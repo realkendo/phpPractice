@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- using HTML to insert operations in html -->
   <h1>
     <?php
       echo 4 + 5;
     ?>
   </h1>
+<!--using PHP to work with strings -->
   <h4>
     <?php 
       $message = "my string";
-      echo 'This is ' . $message;
+      echo "This is  $message";
     ?>
   </h4>    
 </body>
