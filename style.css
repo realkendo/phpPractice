@@ -1,0 +1,7 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left,#043, #a13);
+    color: gold;
+}
