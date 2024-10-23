@@ -114,7 +114,7 @@
 
     switch($uefa){
       case 'EU':
-        echo "$uefa is European Union";
+        echo "$uefa is European Union <br>";
         break;
       case 'NATO':
         echo "Welcome to $uefa";
@@ -128,10 +128,49 @@
     }
 
 
-    echo " <br/> <b>(7) FUNCTIONS</b>"
+  echo " <br/> <b>(7) FUNCTIONS</b>";
 
-    
+  function isEven($num){
+    if($num % 2 == 0){
+      echo "$num is an even number <br>";
+    }else if($num % 2 == 1){
+      echo "$num is an odd number <br>";
+    }else{
+      echo "$num is an invalid entry <br>";
+    };
+  };
 
+  isEven('27');
+
+  // prime number function
+  function isPrime($number) {
+    // Check if number is less than or equal to 1
+    if ($number <= 1) {
+      return "$number is not a prime number.";
+    }
+  
+    // Loop to check for factors
+    for ($i = 2; $i < $number; $i++) {
+      if ($number % $i == 0) {
+        return "$number is not a prime number.";
+      }
+    }
+  
+    // If no factors are found, it's a prime number
+    return "$number is a prime number.";
+  }
+  
+  // Test the function with a number
+  echo isPrime(67); 
+
+  function adder($num1, $num2){
+    return ($num1 + $num2);
+  };
+  $num1 = 5;
+  $num2 = 7;
+
+  echo "<br /> $num1 + $num2 = " . adder($num1,$num2);
+  
 ?>
 
 
